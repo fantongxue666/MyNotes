@@ -1,0 +1,9 @@
+stages:
+  - doc_deploy
+
+start:
+  stage: doc_deploy
+  tags:
+    - deployDocs
+  script:
+    - yes| cp -rf . /opt/digital-twins-development-doc || exit 0

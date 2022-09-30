@@ -1,0 +1,58 @@
+@font-face {
+    font-family: j-mono;
+    src: url('assets/font/JetBrainsMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: lato;
+    src: url('assets/font/lato.ttf');
+}
+
+@font-face {
+    font-family: pf;
+    src: url('assets/font/pf.ttf');
+}
+
+html,
+body {
+    font-family: lato, pf, Helvetica Neue, Arial, sans-serif;
+    letter-spacing: 1.5px;
+    color: #000000;
+}
+
+/* md标题居中 */
+#main>h1:first-child {
+    text-align: center;
+}
+
+/*标题前提示*/
+#main.markdown-section h2:before {
+    content: 'H2';
+}
+
+#main.markdown-section h3:before {
+    content: 'H3';
+}
+
+#main.markdown-section h4:before {
+    content: 'H4';
+}
+
+#main.markdown-section h5:before {
+    content: 'H5';
+}
+
+#main.markdown-section h6:before {
+    content: 'H6';
+}
+
+.markdown-section h2:before,
+.markdown-section h3:before,
+.markdown-section h4:before,
+.markdown-section h5:before,
+.markdown-section h6:before {
+    margin-right: 0.3rem;
+    color: var(--theme-color);
+    font-size: 0.5em;
+    font-family: pf;
+}
